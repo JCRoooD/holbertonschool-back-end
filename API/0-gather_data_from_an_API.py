@@ -37,3 +37,6 @@ print(
 for task in to_do_data:
     if task.get('completed'):
         print('\t {}'.format(task.get('title')))
+
+if __name__ == '__main__':
+    pass
