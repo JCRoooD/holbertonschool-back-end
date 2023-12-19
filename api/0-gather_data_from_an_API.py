@@ -12,8 +12,8 @@ employee_id = sys.argv[1]
 """Get the employee ID"""
 
 u_response = requests.get(
-    f'https://jsonplaceholder.typicode.com/users/{employee_id}')
-""""Get the user response"""
+    'https://jsonplaceholder.typicode.com/users/' + employee_id)
+"""Get the user response"""
 
 data = u_response.json()
 """Get the user response in json format"""
