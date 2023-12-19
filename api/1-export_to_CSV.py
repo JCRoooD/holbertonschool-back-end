@@ -32,11 +32,13 @@ to_do_data = to_do_response.json()
 to_do_total = len(to_do_data)
 """Get the total number of to do"""
 
-complete_to_do = sum([1 for task in to_do_data if task.get('completed')])
+comp_to_do = sum([1 for task in to_do_data if task.get('completed')])
 """Get the number of completed to do"""
 
+
 print(
-    'Employee {employee_name} is done with tasks({complete_to_do}/{to_do_total}):')
+    f'Employee{employee_name}is done with tasks({comp_to_do}/{to_do_total}):')
+
 
 for task in to_do_data:
     if task['completed']:
